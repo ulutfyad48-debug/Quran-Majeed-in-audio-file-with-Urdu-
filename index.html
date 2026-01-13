@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="msvalidate.01" content="901A6D8385FFD0A7BDB9FEF87896E584" />
-<meta name="google-site-verification" content="u0HQvmeVKbyBWL1oaDDylFERp4bmJKpg-IT7i_U0CmE" />
+    <meta name="msvalidate.01" content="901A6D8385FFD0A7BDB9FEF87896E584" />
+    <meta name="google-site-verification" content="u0HQvmeVKbyBWL1oaDDylFERp4bmJKpg-IT7i_U0CmE" />
     <title>قرآن مجید مع اردو ترجمہ</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
@@ -21,7 +21,6 @@
             text-align: center;
         }
 
-        /* ٹاپ بار */
         .top-header {
             display: flex;
             justify-content: space-between;
@@ -48,7 +47,6 @@
         .help-btn { background: #dc2626; color: white; }
         .main-web-btn { background: var(--gold); color: #000; }
 
-        /* ہیلپ ماڈل اور سلائیڈر */
         #helpModal {
             display: none;
             position: fixed;
@@ -107,10 +105,17 @@
         }
         
         .step-dots { margin-top: 15px; }
-        .dot { height: 12px; width: 12px; background: #555; display: inline-block; border-radius: 50%; margin: 0 5px; transition: 0.3s; }
+        .dot { 
+            height: 12px; 
+            width: 12px; 
+            background: #555; 
+            display: inline-block; 
+            border-radius: 50%; 
+            margin: 0 5px; 
+            transition: 0.3s; 
+        }
         .dot.active { background: var(--gold); transform: scale(1.2); }
 
-        /* پروفائل سیکشن */
         .profile-card {
             background: linear-gradient(145deg, #1e293b, #0b1120);
             width: 90%; max-width: 550px;
@@ -131,7 +136,6 @@
         .user-name { color: var(--gold); font-size: 2rem; margin: 5px 0; }
         .intro-para { font-size: 1.1rem; line-height: 1.6; color: #f1f5f9; padding: 0 10px; }
 
-        /* سرچ اور لسٹ */
         .search-area { padding: 15px; }
         .search-box {
             width: 90%; max-width: 500px; padding: 12px;
@@ -174,10 +178,14 @@
                 <img class="step-img active" src="https://lh3.googleusercontent.com/d/1pgXfiZloROtNbeN_4EfcM7DvJyKCccvC" alt="Step 1">
                 <img class="step-img" src="https://lh3.googleusercontent.com/d/1GCfCSiZ57UjrJcJo7jjLdkdk6KBKWk0r" alt="Step 2">
                 <img class="step-img" src="https://lh3.googleusercontent.com/d/106TfecZzov1ELUg85-pR8tNAEdqtaL_Z" alt="Step 3">
+                <img class="step-img" src="https://lh3.googleusercontent.com/d/1fJsB_AhQskZuyEHoE_4ONvDPgNgbyl9P" alt="Step 4">
+                <img class="step-img" src="https://lh3.googleusercontent.com/d/1hnkdL0PNL3kxV7rdLHAAEobv81JVGAxQ" alt="Step 5">
             </div>
 
             <div class="step-dots">
                 <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
@@ -194,12 +202,10 @@
         <div class="profile-img-box">
             <img src="https://lh3.googleusercontent.com/d/1JE_KUGmufa5AA7tWRIFG23z3QFQAWaI3" alt="یداللہ">
         </div>
-        <h2 class="user-name">قرآن مجید مع اردو ترجمہ </h2>
+        <h2 class="user-name">قرآن مجید مع اردو ترجمہ</h2>
         <div class="intro-para">
-            <div class="intro-para">
-    السلام علیکم! اس ویب سائٹ میں آپ کو اردو ترجمہ  <b>کے ساتھ قرآن مجید کی تمام سورتیں الگ الگ <b> MP3 فائل میں ملیں گی۔
-</div>
-        
+            السلام علیکم! اس ویب سائٹ میں آپ کو اردو ترجمہ <b>کے ساتھ قرآن مجید کی تمام سورتیں الگ الگ</b> MP3 فائل میں ملیں گی۔
+        </div>
     </div>
 
     <div class="search-area">
@@ -210,7 +216,6 @@
     <div id="surahContainer"></div>
 
     <script>
-        // ہیلپ سلائیڈر لاجک
         let currentStep = 0;
         const steps = document.querySelectorAll('.step-img');
         const dots = document.querySelectorAll('.dot');
@@ -235,7 +240,6 @@
             stepTitle.innerText = "Step " + (currentStep + 1);
         }
 
-        // گوگل ڈرائیو اے پی آئی
         const API_KEY = 'AIzaSyC8GfeNEk_ugD9TG_5CGyUbwfvFQ88YJts'; 
         const FOLDER_ID = '1Y3Vjp-faCeOeWnnLC3wO0kGgbU9O-fH7';
         let allFiles = [];
