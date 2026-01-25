@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msvalidate.01" content="901A6D8385FFD0A7BDB9FEF87896E584" />
     <meta name="google-site-verification" content="u0HQvmeVKbyBWL1oaDDylFERp4bmJKpg-IT7i_U0CmE" />
-    <title>قرآن مجید مع اردو ترجمہ</title>
+    <title>DIT Course Full Curriculum</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -161,7 +161,7 @@
 
     <div class="top-header">
         <a href="https://ulutfyad48-debug.github.io/Islamic-library/" class="nav-btn main-web-btn">
-            <i class="fas fa-layer-group"></i> مین لائبریری
+            <i class="fas fa-layer-group"></i>اسلامک لائبری
         </a>
         <button class="nav-btn help-btn" onclick="openHelp()">
             <i class="fas fa-info-circle"></i> ہیلپ (مدد)
@@ -179,7 +179,8 @@
                 <img class="step-img" src="https://lh3.googleusercontent.com/d/1JgSUzgotDffPiD1fAJzv3Gn_9gm0VJxI" alt="Step 2">
                 <img class="step-img" src="https://lh3.googleusercontent.com/d/1UHHQc664AFyrhDb3nTcl1hEde8hfCzeQ" alt="Step 3">
                 <img class="step-img" src="https://lh3.googleusercontent.com/d/15ntHYxh4QYja8-FYfqiAacgVu65ooabD" alt="Step 4">
-                <img class="step-img" src="https://lh3.googleusercontent.com/d/1QLyCqZt-h4hoXXBz0lT-4cGhDEcKgYUg" alt="Step 5">
+                <img class="step-img" src="https://lh3.googleusercontent.com/d/1QLyCqZt-h4hoXXBz0lT-4cGhDEcKgYUg" alt="Step 5">            </div>
+
             <div class="step-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -213,6 +214,9 @@
     <div id="loadingMsg">فائلیں لوڈ ہو رہی ہیں...</div>
     <div id="surahContainer"></div>
 
+    <div id="loadingMsg">فائلیں لوڈ ہو رہی ہیں...</div>
+    <div id="surahContainer"></div>
+
     <script>
         let currentStep = 0;
         const steps = document.querySelectorAll('.step-img');
@@ -238,9 +242,9 @@
             stepTitle.innerText = "Step " + (currentStep + 1);
         }
 
-        const API_KEY = 'AIzaSyC8GfeNEk_ugD9TG_5CGyUbwfvFQ88YJts'; 
+             const API_KEY = 'AIzaSyC8GfeNEk_ugD9TG_5CGyUbwfvFQ88YJts'; 
         const FOLDER_ID = '1Y3Vjp-faCeOeWnnLC3wO0kGgbU9O-fH7';
-        let allFiles = [];
+         let allFiles = [];
 
         async function loadFiles() {
             try {
