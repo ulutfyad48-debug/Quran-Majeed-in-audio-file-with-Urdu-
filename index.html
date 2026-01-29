@@ -18,8 +18,6 @@
     
     <!-- اڈز سکرپٹس -->
     <script src="https://pl28592355.effectivegatecpm.com/b4/80/77/b48077d15893279ce3505db67539d01d.js"></script>
-    <meta name="google-adsense-account" content="ca-pub-1417987183063486">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1417987183063486" crossorigin="anonymous"></script>
     
     <!-- گوگل اینالیٹکس -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F45XQV5C69"></script>
@@ -253,12 +251,8 @@
     <div class="sticky-top-ad">
         <div class="ad-label">ADVERTISEMENT</div>
         <div class="ad-container">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-1417987183063486"
-                 data-ad-slot="2358676150"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+            <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
+            <div id="sticky-ad-container"></div>
         </div>
     </div>
 
@@ -305,12 +299,8 @@
     <!-- پروفائل کے بعد اڈ -->
     <div class="ad-label">ADVERTISEMENT</div>
     <div class="ad-container">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-1417987183063486"
-             data-ad-slot="6813227809"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+        <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
+        <div id="profile-ad-container"></div>
     </div>
 
     <div class="search-area">
@@ -320,12 +310,8 @@
     <!-- سرچ کے بعد اڈ -->
     <div class="ad-label">ADVERTISEMENT</div>
     <div class="ad-container">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-1417987183063486"
-             data-ad-slot="2402391265"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+        <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
+        <div id="search-ad-container"></div>
     </div>
 
     <div id="loadingMsg">فائلیں لوڈ ہو رہی ہیں...</div>
@@ -343,12 +329,8 @@
     <div class="fixed-bottom-ad">
         <div class="ad-label" style="color:#fff; margin:5px;">ADVERTISEMENT</div>
         <div class="bottom-ad-container">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-1417987183063486"
-                 data-ad-slot="6813227809"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+            <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
+            <div id="bottom-ad-container"></div>
         </div>
     </div>
 
@@ -438,8 +420,7 @@
         window.onload = function() {
             loadFiles();
             
-            // تمام اڈز لوڈ کریں
-            (adsbygoogle = window.adsbygoogle || []).push({});
+            // موجودہ غیر گوگل اڈز خودبخود لوڈ ہوں گے کیونکہ ان کے اپنے سکرپٹس ہیں
         };
     </script>
 
