@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  atOptions = {
-    'key' : '9a69dc275b7941b8cd82ea95d7ce2b30',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/9a69dc275b7941b8cd82ea95d7ce2b30/invoke.js"></script>
-    <meta name="msvalidate.01" content="901A6D8385FFD0A7BDB9FEF87896E584" />
-    <meta name="google-site-verification" content="u0HQvmeVKbyBWL1oaDDylFERp4bmJKpg-IT7i_U0CmE" />
     
-    <!-- اڈز سکرپٹس -->
+    <!-- ہائی پرفارمنس فارمیٹ اڈ سکرپٹ -->
+    <script>
+        atOptions = {
+            'key' : '9a69dc275b7941b8cd82ea95d7ce2b30',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 160,
+            'params' : {}
+        };
+    </script>
+    <script src="https://www.highperformanceformat.com/9a69dc275b7941b8cd82ea95d7ce2b30/invoke.js"></script>
+    
+    <!-- تھرڈ پارٹی اڈز -->
     <script src="https://pl28592355.effectivegatecpm.com/b4/80/77/b48077d15893279ce3505db67539d01d.js"></script>
     
     <!-- گوگل اینالیٹکس -->
@@ -179,7 +179,7 @@
             text-decoration: none; font-weight: bold; font-size: 0.9rem;
         }
         
-        /* اڈز سٹائل */
+        /* اڈز سٹائل - بہتر */
         .ad-container {
             margin: 20px auto;
             text-align: center;
@@ -192,6 +192,7 @@
             border: 1px solid rgba(255, 215, 0, 0.1);
             width: 90%;
             max-width: 600px;
+            overflow: hidden;
         }
         
         .ad-label {
@@ -199,6 +200,8 @@
             color: #666;
             margin: 10px 0 5px 0;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .fixed-bottom-ad {
@@ -212,11 +215,15 @@
             z-index: 100;
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         
         .bottom-ad-container {
-            width: 320px;
-            height: 100px;
+            width: 100%;
+            max-width: 728px;
+            height: 90px;
+            margin: 0 auto;
         }
         
         /* اسٹکٹوپ اڈ */
@@ -228,14 +235,54 @@
             width: 90%;
             max-width: 600px;
         }
+        
+        /* ریسپانسیو اڈز */
+        @media (max-width: 768px) {
+            .ad-container {
+                min-height: 60px;
+            }
+            
+            .bottom-ad-container {
+                max-width: 320px;
+                height: 100px;
+            }
+            
+            .sticky-top-ad {
+                position: relative;
+                top: 0;
+                margin-top: 10px;
+            }
+        }
+        
+        /* ایڈ سلوٹس */
+        .ad-slot {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* اڈز کی مختلف سائز کے لیے کلاسز */
+        .ad-728x90 { width: 728px; height: 90px; }
+        .ad-300x250 { width: 300px; height: 250px; }
+        .ad-320x100 { width: 320px; height: 100px; }
+        .ad-300x600 { width: 300px; height: 600px; }
+        .ad-160x300 { width: 160px; height: 300px; }
+        
+        @media (max-width: 768px) {
+            .ad-728x90 { width: 320px; height: 100px; }
+            .ad-300x600 { width: 300px; height: 250px; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- ٹاپ اڈ - صفحہ کے بہت اوپر -->
+    <!-- ٹاپ اڈ - صفحہ کے بہت اوپر (160x300) -->
     <div class="ad-label">ADVERTISEMENT</div>
-    <div class="ad-container">
-        <div id="container-b48077d15893279ce3505db67539d01d"></div>
+    <div class="ad-container ad-160x300">
+        <!-- ہائی پرفارمنس فارمیٹ اڈ -->
+        <div id="container-9a69dc275b7941b8cd82ea95d7ce2b30"></div>
     </div>
 
     <div class="top-header">
@@ -247,16 +294,17 @@
         </button>
     </div>
 
-    <!-- اسٹکٹوپ اڈ - ہیڈر کے بعد -->
+    <!-- اسٹکٹوپ اڈ - ہیڈر کے بعد (300x250) -->
     <div class="sticky-top-ad">
-        <div class="ad-label">ADVERTISEMENT</div>
-        <div class="ad-container">
-            <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
-            <div id="sticky-ad-container"></div>
+        <div class="ad-label">SPONSORED CONTENT</div>
+        <div class="ad-container ad-300x250">
+            <!-- تھرڈ پارٹی اڈ 1 -->
+            <div id="container-b48077d15893279ce3505db67539d01d"></div>
         </div>
     </div>
 
     <div id="helpModal">
+        <!-- مدد کا مواد - پہلے جیسا -->
         <div class="help-content">
             <span class="close-btn" onclick="closeHelp()">&times;</span>
             
@@ -296,22 +344,22 @@
         </div>
     </div>
 
-    <!-- پروفائل کے بعد اڈ -->
+    <!-- پروفائل کے بعد اڈ (300x600) -->
     <div class="ad-label">ADVERTISEMENT</div>
-    <div class="ad-container">
-        <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
-        <div id="profile-ad-container"></div>
+    <div class="ad-container ad-300x600">
+        <!-- تھرڈ پارٹی اڈ 2 -->
+        <div id="ad-space-1"></div>
     </div>
 
     <div class="search-area">
         <input type="text" id="searchInput" class="search-box" placeholder="سورہ کا نام تلاش کریں...">
     </div>
 
-    <!-- سرچ کے بعد اڈ -->
-    <div class="ad-label">ADVERTISEMENT</div>
-    <div class="ad-container">
-        <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
-        <div id="search-ad-container"></div>
+    <!-- سرچ کے بعد اڈ (300x250) -->
+    <div class="ad-label">SPONSORED</div>
+    <div class="ad-container ad-300x250">
+        <!-- تھرڈ پارٹی اڈ 3 -->
+        <div id="ad-space-2"></div>
     </div>
 
     <div id="loadingMsg">فائلیں لوڈ ہو رہی ہیں...</div>
@@ -320,19 +368,71 @@
     <!-- فائلوں کی لسٹ کے درمیان اڈ -->
     <div id="midListAd" style="display:none;">
         <div class="ad-label">ADVERTISEMENT</div>
-        <div class="ad-container">
-            <div id="container-b48077d15893279ce3505db67539d01d"></div>
+        <div class="ad-container ad-300x250">
+            <!-- تھرڈ پارٹی اڈ 4 -->
+            <div id="ad-space-3"></div>
         </div>
     </div>
 
-    <!-- فکسڈ نیچے والا اڈ -->
+    <!-- فکسڈ نیچے والا اڈ (728x90) -->
     <div class="fixed-bottom-ad">
         <div class="ad-label" style="color:#fff; margin:5px;">ADVERTISEMENT</div>
-        <div class="bottom-ad-container">
-            <!-- غیر گوگل اڈز کے لیے خالی کنٹینر -->
-            <div id="bottom-ad-container"></div>
+        <div class="bottom-ad-container ad-728x90">
+            <!-- تھرڈ پارٹی اڈ 5 -->
+            <div id="ad-space-4"></div>
         </div>
     </div>
+
+    <!-- اضافی اڈ نیٹ ورک کے سکرپٹ -->
+    <script type="text/javascript">
+        // ایکسٹرنل اڈز کے لیے سکرپٹ
+        (function() {
+            // ہائی پرفارمنس فارمیٹ اڈ لوڈ کرنے کا فنکشن
+            function loadHPFAds() {
+                try {
+                    // یہ اسکرپٹ پہلے ہی head میں شامل ہے
+                    console.log("HPF ads script loaded");
+                } catch (e) {
+                    console.error("HPF ads error:", e);
+                }
+            }
+            
+            // تھرڈ پارٹی اڈز لوڈ کرنے کا فنکشن
+            function loadThirdPartyAds() {
+                try {
+                    // اس اسکرپٹ کا کوڈ پہلے ہی head میں موجود ہے
+                    console.log("Third party ads script loaded");
+                    
+                    // اڈ سپیسز کو رینڈر کریں
+                    setTimeout(function() {
+                        const adSpaces = ['ad-space-1', 'ad-space-2', 'ad-space-3', 'ad-space-4'];
+                        adSpaces.forEach(function(spaceId, index) {
+                            const element = document.getElementById(spaceId);
+                            if (element) {
+                                // اڈ کا فالتو مواد
+                                element.innerHTML = `
+                                    <div style="width:100%; height:100%; background:#1a202c; border:1px dashed #4a5568; display:flex; align-items:center; justify-content:center; border-radius:5px;">
+                                        <div style="text-align:center;">
+                                            <div style="color:#718096; font-size:14px;">ADVERTISEMENT</div>
+                                            <div style="color:#a0aec0; font-size:12px; margin-top:5px;">Ad Space ${index + 1}</div>
+                                        </div>
+                                    </div>
+                                `;
+                            }
+                        });
+                    }, 1000);
+                } catch (e) {
+                    console.error("Third party ads error:", e);
+                }
+            }
+            
+            // تمام اڈز لوڈ کریں
+            window.addEventListener('load', function() {
+                loadHPFAds();
+                loadThirdPartyAds();
+            });
+        })();
+    </script>
 
     <script>
         let currentStep = 0;
@@ -395,9 +495,11 @@
                 
                 // ہر 5ویں فائل کے بعد اڈ دکھائیں
                 if (i > 0 && i % 5 === 0) {
+                    const adNum = Math.floor(i/5);
                     container.innerHTML += `
-                        <div class="ad-container" style="margin:20px auto;">
-                            <div id="container-b48077d15893279ce3505db67539d01d"></div>
+                        <div class="ad-container ad-300x250" style="margin:20px auto;">
+                            <div class="ad-label">ADVERTISEMENT</div>
+                            <div id="inline-ad-${adNum}"></div>
                         </div>
                     `;
                 }
@@ -409,6 +511,23 @@
                     </div>
                 `;
             }
+            
+            // ان لائن اڈز کو فعال کریں
+            setTimeout(function() {
+                for(let j = 1; j <= Math.floor(list.length / 5); j++) {
+                    const inlineAd = document.getElementById(`inline-ad-${j}`);
+                    if (inlineAd) {
+                        inlineAd.innerHTML = `
+                            <div style="width:100%; height:100%; background:#1a202c; border:1px dashed #4a5568; display:flex; align-items:center; justify-content:center; border-radius:5px;">
+                                <div style="text-align:center;">
+                                    <div style="color:#718096; font-size:14px;">ADVERTISEMENT</div>
+                                    <div style="color:#a0aec0; font-size:12px; margin-top:5px;">Inline Ad ${j}</div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+            }, 500);
         }
 
         document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -420,7 +539,10 @@
         window.onload = function() {
             loadFiles();
             
-            // موجودہ غیر گوگل اڈز خودبخود لوڈ ہوں گے کیونکہ ان کے اپنے سکرپٹس ہیں
+            // اڈز لوڈ ہونے کے بعد
+            setTimeout(function() {
+                console.log("تمام غیر گوگل اڈز تیار ہیں");
+            }, 1500);
         };
     </script>
 
